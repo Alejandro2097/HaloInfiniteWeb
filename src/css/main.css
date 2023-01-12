@@ -74,7 +74,7 @@ nav .mobile {
     width: 100%;
 }
 nav .mobile .header{
-    background-color: red;
+    background-color: black;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -85,6 +85,12 @@ nav .mobile .header a{
     display: inline-flex;
     text-decoration: none;
     padding: 10px;
+}
+nav .mobile .header #bmenu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
 }
 nav .mobile .links{
     display: flex;
