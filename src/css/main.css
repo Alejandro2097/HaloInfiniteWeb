@@ -71,8 +71,21 @@ nav .menu a:hover {
 }
 nav .mobile {
     display: none;
+    width: 100%;
 }
-
+nav .mobile .header{
+    background-color: red;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+nav .mobile .links{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 200;
+}
 @media screen and (max-width: 1130px){
     nav .link-hide{
         display: none;
@@ -82,7 +95,14 @@ nav .mobile {
     }
 }
 @media screen and (max-width: 640px) {
+    nav{
+        width: 100%;
+        padding: 0;
+    }
     nav ul {
         display: none;
+    }
+    nav .mobile{
+        display: block;
     }
 }
