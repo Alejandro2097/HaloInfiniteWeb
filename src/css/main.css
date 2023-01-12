@@ -13,6 +13,10 @@ body{
 /*
     NAVBAR
 */
+.show{
+    display: flex !important;
+
+}
 nav{
     display: flex;
     align-items: center;
@@ -54,7 +58,8 @@ nav .menu{
     display: none;
     flex-direction: column;
     min-width: 200px;
-
+    margin-top: 48px;
+    
     background-color: white;
 }
 nav .more {
@@ -64,6 +69,7 @@ nav .menu a {
     padding: 10px;
     color: black;
     text-decoration: none;
+
 }
 nav .menu a:hover {
     background-color: black;
@@ -93,7 +99,7 @@ nav .mobile .header #bmenu{
     color: white;
 }
 nav .mobile .links{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: relative;
     z-index: 200;
