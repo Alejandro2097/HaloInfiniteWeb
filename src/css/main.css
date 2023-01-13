@@ -256,6 +256,34 @@ h3{
     margin: 50px auto;
     border: solid 1px #00c3ff;
 }
+#videos #slider #videos-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    overflow: auto;
+}
+#videos #slider #videos-container .item{
+    border: solid 1px #00c3ff;
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 320px;
+    height: 180px;
+}
+
+#videos #slider #videos-container .item a{
+    position: relative;
+    
+}
+#videos #slider #videos-container .item img{
+    object-fit: contain;
+    min-width: 320px;
+    height: 180px;
+}
+#videos #slider #videos-container .item:hover img{
+    transition: opacity 0.3s ease;
+    object-fit: contain;
+}
 @media screen and (max-width: 1191px){
     nav .link-hide{
         display: none;
