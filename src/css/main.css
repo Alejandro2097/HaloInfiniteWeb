@@ -1,37 +1,50 @@
-*{
+* {
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
     line-height: 1.5;
+  
     background-color: black;
-}
-/*
-    NAVBAR
-*/
-.show{
+  }
+  
+  /*----------------
+      NAVBAR
+  -------------------*/
+  
+  .show {
     display: flex !important;
-
-}
-nav{
+  }
+  
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-nav ul li .link::before{
-    content: '';
+  }
+  
+  nav ul li > a {
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+  
+    color: white;
+  }
+  
+  nav ul li .link::before {
+    content: "";
     position: absolute;
     display: block;
     left: 0;
@@ -40,131 +53,145 @@ nav ul li .link::before{
     height: 2px;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-
+  
     background-color: white;
-}
-nav ul li .link:hover::before{
+  }
+  
+  nav ul li .link:hover::before {
     transform: scaleX(1);
-}
-nav ul li > a{
-    display: block;
-    position: relative;
-    padding: 20px 15px 10px 15px;
-    text-decoration: none;
-    color: white;
-}
-nav .menu{
+  }
+  
+  nav .more {
+    display: none;
+  }
+  
+  nav .menu {
     position: absolute;
     display: none;
     flex-direction: column;
     min-width: 200px;
     margin-top: 48px;
-
+  
     background-color: white;
-}
-nav .more {
-    display: none;
-}
-nav .menu a {
+  }
+  
+  nav .menu a {
     padding: 10px;
     color: black;
     text-decoration: none;
-
-}
-nav .menu a:hover {
+  }
+  nav .menu a:hover {
     background-color: black;
     color: white;
-}
-nav .mobile {
+  }
+  
+  nav .mobile {
     display: none;
     width: 100%;
-}
-nav .mobile .header{
-    background-color: black;
+  }
+  
+  nav .mobile .header {
     display: flex;
     text-align: center;
     justify-content: space-between;
     flex-direction: row;
-}
-nav .mobile .header a{
+  
+    background-color: black;
+  }
+  
+  nav .mobile .header a {
     color: white;
     display: inline-flex;
     text-decoration: none;
     padding: 10px;
-}
-nav .mobile .header #bmenu{
+  }
+  
+  nav .mobile .header #bmenu {
     border: none;
     background-color: transparent;
     cursor: pointer;
+  
     color: white;
-}
-nav .mobile .links{
+  }
+  
+  nav .mobile .links {
     display: none;
     flex-direction: column;
     position: relative;
     z-index: 200;
-
+  
     background-color: black;
-}
-nav .mobile .links a{
+  }
+  nav .mobile .links a {
+    font-size: 20px;
     display: block;
     padding: 10px 20px;
-    font-size: 18px;
     text-decoration: none;
+  
     color: white;
-}
-nav .mobile .links a:hover{
+  }
+  
+  nav .mobile .links a:hover {
+    font-size: 20px;
     display: block;
     padding: 10px 20px;
-    font-size: 18px;
     text-decoration: none;
+  
     color: black;
     background-color: white;
-}
-/*
-    HEADER
-*/
-
-header{
+  }
+  
+  /*----------------
+      HEADER
+  -------------------*/
+  header {
     background-image: url(../img/halo-infinite-cover-darkmode.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh;
-}
-
-/*
-    BANNER
-*/
-h2{
+  }
+  
+  /*----------------
+      BANNER
+  -------------------*/
+  
+  h2 {
     font-size: 3.3rem;
     position: relative;
     display: inline-block;
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
-}
-h2::before{
-    content: '';
+  }
+  
+  h2::before {
+    content: "";
     position: absolute;
     width: 100%;
     height: 50px;
     bottom: -40px;
     left: 0;
+  
     transform: scale(0.4) skewY(-20deg) rotate(20deg);
+  
     background-color: greenyellow;
-}
-#banner{
+  }
+  
+  #banner {
     font-size: 1.8em;
-    color: white;
-    padding: 40px;
-    position: absolute;
     text-align: center;
+    padding: 40px;
+    width: 500px;
+    position: absolute;
     z-index: 100;
     top: 200px;
     right: 100px;
+  
+    color: white;
     background-color: rgba(0, 0, 0, 0.5);
-}
-.green-button{
+  }
+  
+  .green-button {
     text-transform: uppercase;
     border: 0;
     display: inline-flex;
@@ -175,24 +202,26 @@ h2::before{
     color: black;
     font-weight: bolder;
     text-decoration: none;
-}
-.green-button:hover{
-    background-color: rgb(131, 183, 52);
-}
-.green-link{
+  }
+  .green-button:hover {
+    background-color: rgb(138, 207, 33);
+  }
+  
+  .green-link {
     text-transform: uppercase;
     border: 0;
     display: inline-flex;
+    position: relative;
     align-items: center;
     font-size: 16px;
     padding: 10px 15px;
-    position: relative;
     color: greenyellow;
     font-weight: bolder;
     text-decoration: none;
-}
-.green-link::before{
-    content: '';
+  }
+  
+  .green-link::before {
+    content: "";
     position: absolute;
     display: block;
     left: 0;
@@ -201,40 +230,48 @@ h2::before{
     height: 2px;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-
+  
     background-color: greenyellow;
-}
-.green-link:hover::before{
-    transform: scaleX(1);
-}
-/*
-    VIDEOS
-*/
-.w-75{
+  }
+  
+  .green-link:hover::before {
+    transform: scaleX(0.8);
+  }
+  
+  /*----------------
+      VIDEOS
+  -------------------*/
+  .w-75 {
     width: 75%;
     margin: 0 auto;
-}
-h3{
+  }
+  
+  h3 {
     font-size: 1.6em;
     padding-top: 50px;
+  
     color: white;
-}
-#videos{
+  }
+  
+  #videos {
     text-align: center;
     padding: 50px 0;
-    background-image: url('../img/bg-videos.png');
+  
+    background-image: url(../img/bg-videos.png);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
+  
     color: white;
-}
-
-#videos #slider #controls{
+  }
+  
+  #videos #slider #controls {
     display: flex;
     justify-content: center;
-}
-#videos #slider #controls .prev,
-#videos #slider #controls .next{
+  }
+  
+  #videos #slider #controls #prev,
+  #videos #slider #controls #next {
     border: none;
     height: 50px;
     width: 80px;
@@ -245,47 +282,53 @@ h3{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-}
-#videos #slider #controls .prev:hover,
-#videos #slider #controls .next:hover{
+  }
+  
+  #videos #slider #controls #prev:hover,
+  #videos #slider #controls #next:hover {
     background-color: rgb(37, 37, 37);
-}
-
-#videos #slider #current{
+  }
+  
+  #videos #slider #current {
     width: 1280px;
     margin: 50px auto;
     border: solid 1px #00c3ff;
-}
-#videos #slider #videos-container{
+  }
+  
+  #videos #slider #videos-container {
     display: flex;
     gap: 10px;
     width: 100%;
     justify-content: center;
     overflow: auto;
-}
-#videos #slider #videos-container .item{
+  }
+  
+  #videos #slider #videos-container .item {
     border: solid 1px #00c3ff;
     cursor: pointer;
     overflow: hidden;
+  
     min-width: 320px;
     height: 180px;
-}
-
-#videos #slider #videos-container .item a{
+  }
+  
+  #videos #slider #videos-container .item a {
     position: relative;
-    
-}
-#videos #slider #videos-container .item img{
+  }
+  
+  #videos #slider #videos-container .item img {
     object-fit: contain;
-    transition: opacity 0.3s ease;
     min-width: 320px;
     height: 180px;
-}
-#videos #slider #videos-container .item:hover img{
-    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  #videos #slider #videos-container .item:hover img {
+    opacity: 0.6;
     object-fit: contain;
-}
-#videos #slider #videos-container .item a::before{
+  }
+  
+  #videos #slider #videos-container .item a::before {
     font-family: "Material Icons";
     font-size: 24px;
     content: "play_arrow";
@@ -302,56 +345,196 @@ h3{
     justify-content: center;
     align-items: center;
     z-index: 100;
-}
-@media screen and (max-width: 1191px){
-    nav .link-hide{
-        display: none;
+  }
+  
+  /*----------------
+      MULTIPLAYER
+  -------------------*/
+  
+  #multi-player {
+    height: 100vh;
+    background-image: url(../img/bg-multiplayer.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .info {
+    line-height: 1.2;
+    padding: 40px;
+    width: 600px;
+    margin-right: 50px;
+  
+    transition: background-color 0.3s ease;
+  }
+  
+  .info p {
+    font-size: 20px;
+  }
+  
+  /*----------------
+      GET THE GAME - STORE
+  -------------------*/
+  #get-the-game {
+    text-align: center;
+    padding: 50px 0;
+  
+    color: white;
+  }
+  #get-the-game h2 {
+    color: white;
+  }
+  #get-the-game h3 {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #get-the-game .item-store {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #get-the-game .item-store .left {
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  #get-the-game .item-store .left img {
+    width: 500px;
+  }
+  
+  #get-the-game .item-store .right {
+    text-align: left;
+    width: 80%;
+  }
+  
+  footer {
+    height: 800px;
+  
+    background-image: url(../img/master-chief-darkmode.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 1519px) {
+    .info {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
     }
-    nav .more{
-        display: flex;
+  }
+  
+  @media screen and (max-width: 1191px) {
+    nav .link-hide {
+      display: none;
     }
-    header{
-        height: 70vh;
+  
+    nav .more {
+      display: flex;
     }
-    #banner{
-        position:initial !important;
-        z-index: 100;
-        width: 100%;
+  
+    header {
+      height: 70vh;
     }
-    #slider #current{
-        width: 80% !important;
+    #banner {
+      position: initial !important;
+      z-index: 100;
+      width: 100%;
     }
-    #slider #current iframe{
-        height: 500px;
+  
+    #slider #current {
+      width: 80% !important;
     }
-}
-@media screen and (max-width: 701px) {
-    nav{
-        width: 100%;
-        padding: 0;
+    #slider #current iframe {
+      height: 500px;
+    }
+  
+    #multi-player {
+      background-position: center left;
+    }
+  
+    .info {
+      width: 600px;
+      margin: 0 auto;
+    }
+  
+    #get-the-game .item-store {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #get-the-game .item-store .left img {
+      width: 300px;
+    }
+  
+    #get-the-game .item-store .right {
+      width: 100%;
+    }
+  
+    footer {
+      background-position: center center;
+    }
+  }
+  
+  @media screen and (max-width: 701px) {
+    nav {
+      width: 100%;
+      padding: 0;
     }
     nav ul {
-        display: none;
+      display: none;
     }
-    nav .mobile{
-        display: block;
+  
+    nav .mobile {
+      display: block;
     }
-    header{
-        background-position: center 40px;
-        height: 30vh;
+  
+    header {
+      background-position: center 40px;
+      height: 30vh;
     }
-    #banner{
-        position:initial !important;
-        z-index: 100;
-        width: 100%;
+  
+    #slider #current {
+      width: 90%;
     }
-    #slider #current{
-        width: 90%;
+  
+    #slider #current iframe {
+      height: 300px;
     }
-    #slider #current iframe{
-        height: 300px;
+  
+    #slider #videos-container {
+      display: none !important;
     }
-    #slider #videos-container{
-        display: none !important;
+  
+    #multi-player {
+      background-position: -400px 0px;
     }
-}
+  
+    .info {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    #get-the-game .item-store {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #get-the-game .item-store .left img {
+      width: 300px;
+    }
+  
+    #get-the-game .item-store .right {
+      text-align: center;
+      width: 100%;
+    }
+  
+    footer {
+      height: 400px;
+      background-position: center center;
+    }
+  }
