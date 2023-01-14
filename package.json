@@ -1,0 +1,24 @@
+{
+  "name": "HaloInfiniteWeb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandro2097/HaloInfiniteWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejandro2097/HaloInfiniteWeb/issues"
+  },
+  "homepage": "https://github.com/Alejandro2097/HaloInfiniteWeb#readme",
+  "dependencies": {
+    "vite": "^4.0.4"
+  }
+}
