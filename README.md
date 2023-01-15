@@ -8,4 +8,4 @@ The website is responsive and respond to the dark mode or ligth mode in your com
 https://alejandro2097.github.io/HaloInfiniteWeb/
 
 
-![image of the preview](/assets/img/haloreadme.PNG)
+![image of the preview](/src/img/haloreadme.PNG)
