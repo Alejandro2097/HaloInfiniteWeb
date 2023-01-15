@@ -112,7 +112,7 @@ nav .mobile .links a:hover {
   background-color: #fff;
 }
 header {
-  background-image: url(assets/halo-infinite-cover-darkmode-ed3f195d.jpg);
+  background-image: url(halo-infinite-cover-darkmode.jpg);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -200,7 +200,7 @@ h3 {
 #videos {
   text-align: center;
   padding: 50px 0;
-  background-image: url(assets/bg-videos-8ac5b88c.png);
+  background-image: url(bg-videos-8ac5b88c.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,7 +279,7 @@ h3 {
 }
 #multi-player {
   height: 100vh;
-  background-image: url(assets/bg-multiplayer-30e474b9.jpeg);
+  background-image: url(bg-multiplayer-30e474b9.jpeg);
   display: flex;
   align-items: center;
   justify-content: end;
@@ -326,7 +326,7 @@ h3 {
 }
 footer {
   height: 800px;
-  background-image: url(assets/master-chief-darkmode-b9352435.jpg);
+  background-image: url(master-chief-darkmode-b9352435.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -497,6 +497,6 @@ footer {
     color: #000;
   }
   footer {
-    background-image: url(assets/master-chief-0be370c2.jpg);
+    background-image: url(master-chief-0be370c2.jpg);
   }
 }
